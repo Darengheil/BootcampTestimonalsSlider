@@ -80,4 +80,55 @@ p{
 
 @media (max-width: 900px){
 
+    .container{
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+
+    .person{
+        justify-content: center;
+    }
+
+    .description{
+        width: 100%;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .mainimg{
+        width: 80%;
+    }
+
+    .stepper{
+        height: 20%;
+        width: 30%;
+        right: 35%;
+    }
+
+    h6{
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .quotesimg{
+        display: none;
+    }
+
+    .bigbgimg{
+        width: 100%;
+    }
+    .curveimg{
+        width: 60%;
+    }
 }
