@@ -20,8 +20,8 @@
       </div>
       <img src="images/image-tanya.jpg" class="mainimg">
       <div class="stepper">
-        <input type="image" src="images/icon-prev.svg" class="previousstep"> 
-        <input type="image" src="images/icon-next.svg" class="nextstep">
+        <input type="image" src="images/icon-prev.svg" class="previousstep" onclick="plusSlides(-1)"> 
+        <input type="image" src="images/icon-next.svg" class="nextstep" onclick="plusSlides(1)">
       </div>
     </div>
     <div class="person" style="display: none;">
@@ -34,8 +34,8 @@
       </div>
       <img src="images/image-john.jpg" class="mainimg">
       <div class="stepper">
-        <input type="image" src="images/icon-prev.svg" class="previousstep"> 
-        <input type="image" src="images/icon-next.svg" class="nextstep">
+        <input type="image" src="images/icon-prev.svg" class="previousstep" onclick="plusSlides(-1)"> 
+        <input type="image" src="images/icon-next.svg" class="nextstep" onclick="plusSlides(1)">
       </div>
     </div>
     <img src="images/pattern-bg.svg" class="bigbgimg">
@@ -43,6 +43,22 @@
   </div>
   <img src="images/pattern-curve.svg" class="curveimg">
   <script>
+    let slideCount = 1;
+
+    function plusSlides(n) {
+      showSlides(slideCount += n);
+    }
+
+    function showSlides(n){
+      let i;
+      let slides = document.getElementsByClassName("person");
+      if(n > slides.length) {slideCount = 1}
+      if(n < 1) {slideCount = slides.length}
+      for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideCount - 1].style.display = "flex";
+    }
 
   </script>
 </body>

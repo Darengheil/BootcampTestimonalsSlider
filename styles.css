@@ -41,15 +41,14 @@ p{
 .mainimg{
     box-shadow: 10px 10px 5px rgb(95, 95, 95);
     z-index:50;
-    align-self: flex-end;
 }
 
 .stepper{
     position: absolute;
-    right: 35%;
+    right: 30%;
     top: 95%;
     display: flex;
-    background-color: hsl(240, 10%, 84%);
+    background-color: hsl(240, 8%, 91%);
     border-radius: 60px;
     z-index: 100;
 }
